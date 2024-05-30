@@ -1,0 +1,12 @@
+{
+  "name": "cv-builder",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:server": "cd server && npm run dev",
+    "start:client": "cd client && yarn run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
